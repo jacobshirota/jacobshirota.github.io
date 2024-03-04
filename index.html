@@ -1,6 +1,233 @@
 <!DOCTYPE html>
-<html>
-<body>
-<p>Hello world</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <title>Jacob Shirota | Software Developer</title>
+
+    <meta name="keywords" content="jacobshirota, javascript, python, c++, software, software engineer, software developer" />
+    <meta name="description" content="Jacob Shirota | Software Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jacobshirota.com/" />
+    <meta property="og:title" content="Jacob Shirota | Software Developer" />
+    <meta property="og:description" content="Welcome to my portfolio! I'm a senior computer science student passionate about software development and cybersecurity." />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://jacobshirota.com/" />
+    <meta property="twitter:title" content="Jacob Shirota | Software Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Welcome to my portfolio! I'm a senior computer science student passionate about software development and cybersecurity."
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+  </head>
+  
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Jacob.</span>
+          <br />
+          I'm a Software Developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/profile.png"
+              alt="Profile Image"
+              width="450"
+              height="350"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Welcome to my portfolio! 
+			  I'm a senior computer science student passionate about software development and cybersecurity. 
+			  Proficient in Python, C++, and JavaScript, I'm driven by the challenge of crafting elegant solutions and fortifying systems against cyber threats. 
+            </p>
+            <p class="about-wrapper__info-text">
+              Beyond academics, I'm an avid learner, constantly exploring new tools and techniques, and engaging in cybersecurity competitions. 
+			  Join me as I push the boundaries of technology and make meaningful contributions to the digital world.
+            </p>
+            <span class="about-wrapper__cta">
+				<!--Put your resume here later-->
+              <a href="./assets/Jacob_Shirota_Resume.pdf" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Caf Genie</h3>
+              <p class="project-wrapper__text-info">
+                Caf Genie is an App that offers the quickest, most reliable, 
+				streamlined information about the Biola Cafeteria. 
+				No inconvenient websites, no hassle. Written in React Native. <br/>
+				Inspired by Miles Luders' Caf Wizard.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a href="./cafgenie.html" target="_blank" class="cta-btn cta-btn--hero"
+                  >More Info</a
+                >
+                <a href="https://github.com/jacobshirota/CafGenie/" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./cafgenie.html" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+		  
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <a href="mailto:jacobshirota@gmail.com" class="cta-btn cta-btn--resume">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/jacob.shirota/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jacob-shirota/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/jacobshirota/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Template by
+          <a
+            href="https://github.com/AnilSeervi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Anil Seervi</a
+          >. <br />Made with &hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
 </html>
