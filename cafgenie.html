@@ -68,79 +68,78 @@
   
   <body>
   
-  <section id="about">
+    <section id="header">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/profile.png"
-              alt="Profile Image"
-              width="450"
-              height="350"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-              Welcome to my portfolio! 
-			  I'm a senior computer science student passionate about software development and cybersecurity. 
-			  Proficient in Python, C++, and JavaScript, I'm driven by the challenge of crafting elegant solutions and fortifying systems against cyber threats. 
-            </p>
-            <p class="about-wrapper__info-text">
-              Beyond academics, I'm an avid learner, constantly exploring new tools and techniques, and engaging in cybersecurity competitions. 
-			  Join me as I push the boundaries of technology and make meaningful contributions to the digital world.
-            </p>
-            <span class="about-wrapper__cta">
-				<!--Put your resume here later-->
-              <a href="./assets/Jacob_Shirota_Resume.pdf" class="cta-btn cta-btn--resume">View Resume</a>
-            </span>
-          </div>
+        <div class="header-wrapper">
+
         </div>
       </div>
     </section>
 
     <!-- Project Section -->
-    <section id="project">
+    <section id="projects">
       <div class="container">
         <h2 class="section-title">Caf Genie</h2>
         <div class="row project-wrapper">
           <div class="project-wrapper__image">
-			<div class="thumbnail rounded">
-			  <img
-				src="./assets/CafGenie/grad_icon.png"
-				class="img-fluid"
-				alt="Caf Genie Icon"
-				width="200"
-				height="200"
-			  />
-			</div>
+            <div>
+              <img
+              src="./assets/CafGenie/grad_icon.png"
+              class="img-fluid"
+              alt="Caf Genie Icon"
+              width="200"
+              height="200"
+              />
+            </div>
           </div>
           <div class="project-wrapper__text">
             <p class="project-wrapper__text-info">
               Caf Genie is an App that offers the quickest, most reliable, 
-			  streamlined information about the Biola Cafeteria. 
-			  No inconvenient websites, no hassle.
+              streamlined information about the Biola Cafeteria. 
+              No inconvenient websites, no hassle.
             </p>
             <p class="project-wrapper__text-info">
               Caf Genie was written in the React Native JS framework as a 
-			  cross-platform replacement for Miles Luders's "Caf Wizard" app.
-			  New features, such as the ability to select "Favorites" 
-			  and view nutritional info, will be released soon.
+              cross-platform replacement for Miles Luders's "Caf Wizard" app.
+              New features, such as the ability to select "Favorites" 
+              and view nutritional info, will be released soon.
             </p>
-			<div class="project-wrapper__text-btns">
-				<a href="https://github.com/jacobshirota/CafGenie/releases/" target="_blank" class="cta-btn"
-				  >Download Latest Release</a
-				>
-				<a href="https://github.com/jacobshirota/CafGenie/" target="_blank" class="cta-btn"
-				  >Source Code</a
-				>
-			</div>
+            <div class="project-wrapper__text-btns">
+              <a href="https://github.com/jacobshirota/CafGenie/releases/" target="_blank" class="cta-btn cta-btn--download"
+                >Download Latest Release</a
+              >
+              <a href="https://github.com/jacobshirota/CafGenie/" target="_blank" class="cta-btn text-color-main"
+                >Source Code</a
+              >
+            </div>
           </div> 
         </div>
-		<div class="row">
-			<p>im just messin around </p>
-		</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">How to Install</h2>
+        <div class="row project-wrapper">
+          <ol class="project-wrapper__list">
+            <h2 class="section-subtitle">On Android:</h2>
+            <li class="project-wrapper__list-li">Download latest .apk release file.</li>
+            <li class="project-wrapper__list-li">Allow apps from unknown sources:
+              <ul class="project-wrapper_list">
+                <li>Navigate to Settings > Apps</li>
+                <li>Tap the Menu icon in the top right corner</li>
+                <li>Tap Special Access</li>
+                <li>Tap Install Unknown Apps</li>
+                <li>Select the app where the .apk file was downloaded</li>
+              </ul>
+            </li>
+            <li class="project-wrapper__list-li">Open the .apk file to install!</li>
+          </ol> 
+          <ol class="project-wrapper__list">
+            <h2 class="section-subtitle">On iPhone:</h2>
+            <p class="project-wrapper__text-info">Coming soon...</p>
+          </ol> 
+        </div>
       </div>
     </section>
     <!-- /END Project Section -->
